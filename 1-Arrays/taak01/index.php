@@ -4,7 +4,7 @@
 <?php
 
 $gegevens = array ("voornaam" => "Jurgen", "Achternaam" => "Louvris", "Leeftijd" => "17", "klas" => "1C");
-echo "Gegevens van Yordany:";
+echo "Gegevens van Jurgen:";
 echo "<br>";
 echo "Voornaam : ". $gegevens["voornaam"];
 echo "<br>";
