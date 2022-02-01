@@ -1,10 +1,15 @@
-<?php  
-$x = 0;
- 
-while($x <= 17) {
-  echo "Ik ben $x jaar, dus ik mag nog niet stemmen. <br> ";
-  $x++;
-    if($x == 18){
-        echo "Ik ben $x dus ik mag stemmen";
-    }
-} 
+<!DOCTYPE html>
+<html>
+
+<?php
+$leeftijd = 0;
+
+while( $leeftijd < 18){
+echo "ik ben". " " .$leeftijd. " jaar, ". " " ." dus ik nog niet stemmen,<br>";
+$leeftijd++;
+
+}
+
+?>
+</body>
+</html>
