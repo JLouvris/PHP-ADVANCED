@@ -4,7 +4,7 @@
 <body>
 
 <?php function schrijfKleur( $kleuren ){
-   echo "<p style='color:$kleuren'>Deze tekst is in de kleur$kleuren</p>";
+   echo "<p style='color:$kleuren'>Deze tekst is in de kleur - $kleuren</p>";
 } 
 
 schrijfKleur('red');
