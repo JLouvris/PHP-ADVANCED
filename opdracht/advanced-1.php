@@ -9,8 +9,6 @@
 <body>
 <center>
     <h3 style=text-align:center>Form Jurgen</h3>
-
-
     <form name="invoer" action="advanced-2.php" method="post">
 
 <p>Text kleur </p>
@@ -43,11 +41,8 @@
 
 <p>Tabelranddikte(px) </p>
 <input type="text" name="tabelrand" style=text-align:center>
-
 <p>Cel-padding(px) </p>
 <input type="text" name="padding" style=text-align:center>
-
-
 
 <br>
 <br>
