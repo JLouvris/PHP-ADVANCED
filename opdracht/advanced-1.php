@@ -12,7 +12,7 @@
     <form name="invoer" action="advanced-2.php" method="post">
 
 <p>Text kleur </p>
-<select name="color">
+<select name="textkleur">
 <?php
     echo "<ul>";
 
@@ -26,7 +26,7 @@
 </select>
 
 <p>Achtergrond kleur </p>
-<select name="color2">
+<select name="achterkleur">
 <?php
  echo "<ul>";
 
