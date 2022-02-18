@@ -6,52 +6,56 @@
     <title>Eindopdracht Jurgen</title>
 </head>
 <body>
-    <center>
+<center>
 
 <?php 
 
-echo"Tekst Kleur is- " .$_POST['textkleur'];
+echo"Tekst Kleur is --> " .$_POST['textkleur'];
 echo"<br/>";
 echo"<br/>";
-echo"Achtergrond Kleur is- " .$_POST['achterkleur'];
+echo"Achtergrond Kleur is --> " .$_POST['achterkleur'];
 
 ?>
 
-<style>
-    body {
+    <style>
+     body {
         background-color: <?php echo $_POST["achterkleur"];?>;
     }
-</style>
+    </style>
 
-<style>
+    <style>
     body {
         color: <?php echo $_POST["textkleur"];?>;
     }
-</style>
+    </style>
+
 <br/>
-<style>
+
+    <style>
     table, tr, td {
-    border: <?php echo $_POST["tabelRand"]; ?>px solid black;
-    padding: <?php echo $_POST["celPad"]; ?>px solid black;
+    border: <?php echo $_POST["tabelrand"]; ?>px solid black;
+    padding: <?php echo $_POST["padding"]; ?>px solid black;
     text-align: center;
 }
-</style>
+    </style>
+
 <br/>
 <br/>
-<table style="width:30%">
   
   <?php
-    $informatie  = array(
-        "Naam"          => "Jurgen Louvris",
-        "Leeftijd"      => "17",
-        "Klas"          => "1C",
-        "Muziek"        => "KA",
-        "Merk scooter"  => "Mio",
-        "Woonplaats"    => "Mijdrecht",
-        "Eten"          => "Grieks",
+  echo "<table>";
+    $informatie = array(
+        "Key"           =>      "Value",
+        "Naam"          =>      "Jurgen Louvris",
+        "Leeftijd"      =>      "17",
+        "Klas"          =>      "1C",
+        "Muziek"        =>      "KA",
+        "Merk scooter"  =>      "Mio",
+        "Woonplaats"    =>      "Mijdrecht",
+        "Eten"          =>      "Grieks"
     );
-        
-    foreach($informatie as $keys => $value){
+
+    function maakRij($keys, $value){
         echo"<tr>";
         echo"<td>";
         echo"$keys";
@@ -60,11 +64,16 @@ echo"Achtergrond Kleur is- " .$_POST['achterkleur'];
         echo"$value";
         echo"</td>";
         echo"</tr>";
+    
     }
+    foreach ($informatie as $keys => $value) {
+        maakRij($keys, $value);
+    }
+
+    echo"</table>";
     ?>
 </table>
 
 <center/>
-    
 </body>
 </html>

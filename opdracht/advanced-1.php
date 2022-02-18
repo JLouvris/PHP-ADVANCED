@@ -37,19 +37,17 @@
 
    echo "</ul>";
  ?>
-</select>
-
-<p>Tabelranddikte(px) </p>
-<input type="text" name="tabelrand" style=text-align:center>
-<p>Cel-padding(px) </p>
-<input type="text" name="padding" style=text-align:center>
-
-<br>
-<br>
-
-<input type="submit" name="submit" value="Verzenden">
-
-
+        </select><br/><br/>
+        
+        <label for="tabelrand">Tabelranddikte(px)</label>
+        <input name="tabelrand" style=text-align:center>
+        <br/><br/>
+       
+        <label for="padding">Cell-padding(px)</label>
+        <input name="padding" style=text-align:center> 
+        <br/><br/>
+        
+        <input type="submit" name="submit" value="verstuur">
 </form>
 </center>
 </body>
